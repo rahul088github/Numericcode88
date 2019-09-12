@@ -10,21 +10,21 @@ class NumericCode{
 			for(i = 0; i < 3; i++){
 				lr = temp%10;
 				temp2 = guess;
-				for(j = 0; j < 3; j++){
+					for(j = 0; j < 3; j++){
 						l = temp2%10;
-					if(l==lr && i==j)
-						flag = 0;
-					else if(l==lr)
-						flag = 1;
-					else flag = 2;
-					temp2 = temp2/10;
+						if(l==lr && i==j)
+							flag = 0;
+						else if(l==lr)
+							flag = 1;
+						else flag = 2;
+						temp2 = temp2/10;
+					}
+				temp = temp/10;
 						if(flag == 0)
 							out = "M" + out;
 						else if(flag == 1)
 							out = "P" + out;
 						else out = "X" + out;
-				}
-				temp = temp/10;
 			}	
 				System.out.println(out);
 				out = "";

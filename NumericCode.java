@@ -17,14 +17,14 @@ class NumericCode{
 					else if(l==lr)
 						flag = 1;
 					else flag = 2;
-				temp2 = temp2/10;
-					}
-			temp = temp/10;
-			if(flag == 0)
-				out = "M" + out;
-			else if(flag == 1)
-				out = "P" + out;
-			else out = "X" + out;
+					temp2 = temp2/10;
+				}
+				if(flag == 0)
+				temp = temp/10;
+					out = "M" + out;
+				else if(flag == 1)
+					out = "P" + out;
+				else out = "X" + out;
 			}	
 			System.out.println(out);
 			out = "";
